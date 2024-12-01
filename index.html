@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Portfolio</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+ <header>
+ <nav class="navbar">
+  <a href="#projects" class="logo" aria-label="Home">My Portfolio</a>
+
+ <button class="nav-toggle" aria-label="Toggle navigation">
+ <span class="hamburger"></span>
+ </button>
+ <ul class="nav-menu">
+ <li><a href="#home" aria-current="page">Home</a></li>
+ <li><a href="#projects">Projects</a></li>
+ <li><a href="#about">About</a></li>
+ <li><a href="#contact">Contact</a></li>
+ </ul>
+ </nav>
+ </header>
+ <main>
+  <section id="home" class="hero">
+    <div class="hero-video-wrapper">
+      <video class="video" src="./Neon Pink And Black Futuristic Artificial Intelligence Automation Video.mp4" autoplay loop muted>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Button to redirect to the Google Drive link for downloading the resume -->
+    <a href="https://drive.google.com/file/d/1ckFlJHTt7QKpvvZzPJVDenaGncsZ2MSu/view?usp=sharing" class="print-resume-btn" target="_blank" aria-label="Download Resume">
+      <i class="fas fa-download"></i> My Resume
+    </a>
+  </section>
+    <div class="project-image-slider">
+      <button class="prev">❮</button>
+      <div class="imagesprofile">
+        <img src="https://i.postimg.cc/6332shkb/Black-And-Blue-Bold-Desktop-Wallpaper.png" alt="Image 1">
+        <img src="https://i.postimg.cc/DyqM4QNM/Gray-and-Blue-Modern-Futuristic-Robot-Mouse-Pad.png" alt="Image 2">
+      </div>
+      <button class="next">❯</button>
+    </div>
+ </main>
+
+    <section id="projects" class="projects">
+      <h2 id="heading">My Projects</h2>
+      <div class="loading-spinner" aria-label="Loading projects">
+        <div class="spinner"></div>
+      </div>
+      <div class="projects-grid"></div> 
+    </section>
+
+ <section id="about" class="about">
+ <h2 id="heading">About Me</h2>
+ <div class="about-content">
+    <p>Hi, I'm <strong>Arisha Mumtaz</strong>, a passionate and creative Front-End Developer with a spririt for creating visually appealing and user-friendly web experiences. I'm currently pursuing a Bachelor's degree in Computer Science (BSCS) and have completed a Diploma in Information System Management, where I honed my skills in web development, UI/UX design, and front-end technologies.
+    As an intern, I enjoy working on projects that push my creative and technical boundaries, allowing me to continuously grow and enhance my expertise. My projects reflect my commitment to delivering seamless designs and robust functionality. With a strong foundation in HTML, CSS, and JavaScript, I strive to create intuitive interfaces that engage users and meet client needs.
+    What sets me apart is my passion for combining functionality with aesthetics, ensuring every project not only works flawlessly but also looks stunning. Whether it's crafting responsive designs or collaborating with teams, I take pride in every detail of my work.</p>
+ </div>
+ </section>
+
+ <section id="contact" class="contact">
+    <h2 id="heading" >Contact Me</h2>
+    <div class="form-container">
+      <form id="contactForm" action="#" method="post" class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+</section>
+ </main>
+
+ <footer>
+    <div class="footer-wrapper">
+      <div class="footer-about">
+        <h3>About Me</h3>
+        <p>
+          Hi, I'm Arisha Mumtaz, a passionate Front-End Developer with a love for crafting seamless digital experiences. Let's build something amazing together!
+        </p>
+      </div>
+  
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+      </div>
+  
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:arishamumtaz340@gmail.com">arishamumtaz340@gmail.com</a></p>
+        <p>Phone: +92 323 821 3359</p>
+        <div class="footer-social">
+          <a href="https://github.com/Arisha004" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/arisha-mumtaz/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:arishamumtaz340@gmail.com" aria-label="Email Me"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p> 2024 Arisha Mumtaz | All Rights Reserved.</p>
+    </div>
+  </footer>
+<script src="./app.js"></script>
+</body>
+</html>
